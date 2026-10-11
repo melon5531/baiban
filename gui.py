@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""douban2neodb 图形界面 —— 豆瓣电影标记同步到 NeoDB
+"""掰瓣 (BaiBan) 图形界面 —— 豆瓣电影标记同步到 NeoDB
 
 直接运行：python gui.py   （或双击 启动同步界面.bat）
 """
@@ -36,7 +36,7 @@ FONT_LOG = ("Consolas", 9)
 class App:
     def __init__(self, root):
         self.root = root
-        root.title("离豆 · 豆瓣标记 → NeoDB 同步")
+        root.title("掰瓣 · 豆瓣标记 → NeoDB 同步")
         root.geometry("880x680")
         root.minsize(760, 560)
         root.configure(bg=BG)
@@ -117,7 +117,7 @@ class App:
         h.pack(fill="x")
         inner = ttk.Frame(h, style="Header.TFrame", padding=(20, 14, 20, 12))
         inner.pack(fill="x")
-        ttk.Label(inner, text="离豆 · 豆瓣标记 → NeoDB 同步", style="HeaderTitle.TLabel").pack(side="left")
+        ttk.Label(inner, text="掰瓣 · 豆瓣标记 → NeoDB 同步", style="HeaderTitle.TLabel").pack(side="left")
         ttk.Label(inner, text="状态 · 评分 · 短评 · 日期 全部保留",
                   style="HeaderSub.TLabel").pack(side="left", padx=(14, 0), pady=(5, 0))
 
