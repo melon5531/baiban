@@ -362,7 +362,7 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
         sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-    parser = argparse.ArgumentParser(description="掰瓣 (douban2neodb)：把豆瓣电影标记同步到 NeoDB")
+    parser = argparse.ArgumentParser(description="掰瓣 (BaiBan)：把豆瓣电影标记同步到 NeoDB")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("check", help="检查豆瓣 cookie 和 NeoDB token 是否可用")
 
