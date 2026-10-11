@@ -109,7 +109,7 @@ async function oauthStart() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
-        client_name: 'douban2neodb-browser-extension',
+        client_name: 'baiban-extension',
         redirect_uris: 'urn:ietf:wg:oauth:2.0:oob',
         scopes: 'read write',
         website: 'https://neodb.social'
